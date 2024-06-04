@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("/colors.css");
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Poppins';
+  border: 0px;
+
+}
+
+body {
+  background-color: var(--lightblue);
+
+
+}
+
+nav {
+  background-color: var(--lightpink);
+  padding: 0.2rem;
+  padding-left: 0px;
+  /* position: fixed;
+  top: 0rem; */
+  width: 100%;
+
+}
+
+nav .logo {
+  height: 3.5rem;
+  margin-left: 0.75rem;
+  ;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav .title {
+  font-size: 1.75rem;
+  color: var(--darkskyblue);
+  display: inline;
+  width: fit-content;
+  letter-spacing: 0.2rem;
+
+}
+
+nav form {
+  display: inline;
+  float: right;
+  padding-top: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+nav .search {
+  font-family: "Poppins";
+  padding: 0.2rem 0.3rem;
+  transition: all 0.1s ease-in-out;
+  border: 0px;
+  border-radius: 6px;
+}
+
+.search:focus {
+  background-color: var(--skyblue);
+  border: 2px solid var(--pink);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--pink);
+  flex-wrap: wrap;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.footer-title {
+  letter-spacing: 0.2rem;
+  color: #663399;
+}
+
+.page-heading {
+  color: #663399;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1rem;
+
+}

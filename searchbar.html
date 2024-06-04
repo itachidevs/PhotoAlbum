@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-compatible" charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Photo Album| A phote search App</title>
+  <link rel="icon" href="/assets/logo.png" type="image/icon type">
+  <link href="/assets/commom.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/search.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+  <!--Navigation bar  -->
+  <nav>
+    <a href="/index.html"><img src="/assets/logo.png" alt="Logo" class="logo" /> </a>
+    <h1 class="title">Gallery</h1>
+    <form action="/searchbar.html" method="get">
+      <input type="text" name="q" autocomplete="off" placeholder="Type here..." class="search">
+      <input type="submit" class="search" value="Search" id="searchquery" />
+    </form>
+  </nav>
+  <!--Main section  -->
+  <section>
+    <h1 class="page-heading"> Search For <span id="result"></span></h1>
+    <div class="container" id="result_container">
+
+    </div>
+  </section>
+  <!--Footer  -->
+  <footer>
+    <a href="./">
+      <h5 class="footer-title">Gallarie</h5>
+    </a>
+    <p class="footer-title">Made By Baby with Greekster 🎯</p>
+    <a href="https://github.com/greekster/PhotoAlbum.git" target="_blank" class="footer-title">Code is here!</a>
+  </footer>
+  <script src="/assets/common.js"></script>
+  <script src="/assets/search.js"></script>
+
+</body>
+
+</html>
