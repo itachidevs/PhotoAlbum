@@ -1,3 +1,5 @@
+let spinner=document.getElementById('loader');
+const cards_container = document.getElementById('result_container');
 window.onload = function() {
   const location = window.location.href;
   // console.log(location);
@@ -14,7 +16,9 @@ window.onload = function() {
   })
 }
 function generatecards(data) {
-  const cards_container = document.getElementById('result_container');
+  spinner.classList.add('loader-block');
+cards_container.style.display="flex";
+ 
   // console.log(data)
   // document.getElementsByName('q') = search_params.get('q');
   data.forEach(single_item => {

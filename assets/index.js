@@ -1,8 +1,12 @@
+let spinner=document.getElementById('loader');
+const cards_container = document.getElementById('container');
+cards_container.style.display="none";
 window.onload = function() {
   fetch(`https://api.unsplash.com/photos?per_page=25&client_id=${API_KEY}`).then(convert_to_json).then(generate_cards);
 }
 function generate_cards(data) {
-  const cards_container = document.getElementById('container');
+spinner.classList.add('loader-block');
+cards_container.style.display="flex";
   // console.log(data)
   data.forEach(single_item => {
     // console.log(data[i])

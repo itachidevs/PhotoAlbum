@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width">
   <title>Photo Album| A phote search App</title>
   <link rel="icon" href="/assets/logo.png" type="image/icon type">
-  <link href="/assets/commom.css" rel="stylesheet" type="text/css" />
-  <link href="/assets/index.css" rel="stylesheet" type="text/css" />
+  <link href="assets/commom.css" rel="stylesheet" type="text/css" />
+  <link href="assets/index.css" rel="stylesheet" type="text/css" />
+  <link href="spinner.css" rel="stylesheet">
 </head>
 
 <body>
   <!--Navigation bar  -->
   <nav>
-    <a href="/index.html"><img src="/assets/logo.png" alt="Logo" class="logo" /> </a>
+    <a href="index.html"><img src="assets/logo.png" alt="Logo" class="logo" /> </a>
     <h1 class="title">Gallery</h1>
     <form action="searchbar.html" method="get">
       <input type="text" name="q" autocomplete="off" placeholder="Type here..." class="search">
@@ -21,23 +22,28 @@
     </form>
   </nav>
   <!--Main section  -->
+  
   <section>
     <h1 class="page-heading">Home Page</h1>
     <div class="container" id="container">
-
+      <section class="loader" id="loader">
+        <div class="spinner">
+         
+        </div>
+       </section>
     </div>
   </section>
-  </section>
+  
   <!--Footer  -->
   <footer>
     <a href="./">
       <h5 class="footer-title">Gallarie</h5>
     </a>
     <p class="footer-title">Made By Baby with Greekster 🎯</p>
-    <a href="https://github.com/greekster/PhotoAlbum.git" target="_blank" class="footer-title">Code is here!</a>
+    <a href="https://github.com/PhotoAlbum.git" target="_blank" class="footer-title">Code is here!</a>
   </footer>
-  <script src="/assets/common.js"></script>
-  <script src="/assets/index.js"></script>
+  <script src="assets/common.js"></script>
+  <script src="assets/index.js"></script>
 
 </body>
 

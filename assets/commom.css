@@ -18,16 +18,13 @@ h6 {
 body {
   background-color: var(--lightblue);
 
-
 }
 
 nav {
   background-color: var(--lightpink);
-  padding: 0.2rem;
-  padding-left: 0px;
-  /* position: fixed;
-  top: 0rem; */
+  top: 0px;
   width: 100%;
+  z-index: 3;
 
 }
 
@@ -63,11 +60,13 @@ nav .search {
   transition: all 0.1s ease-in-out;
   border: 0px;
   border-radius: 6px;
+  width: 100px;
 }
 
 .search:focus {
   background-color: var(--skyblue);
   border: 2px solid var(--pink);
+  width: 400px;
 }
 
 footer {
@@ -82,8 +81,9 @@ footer {
   flex-wrap: wrap;
 }
 
-footer a {
+footer a,p {
   text-decoration: none;
+  font-size: calc(1vw + 0.5rem);
 }
 
 .footer-title {
@@ -96,5 +96,8 @@ footer a {
   text-align: center;
   font-size: 1.5rem;
   margin: 1rem;
-
+ 
+}
+.loader-block{
+  display: none;
 }
