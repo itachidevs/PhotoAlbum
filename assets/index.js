@@ -16,7 +16,7 @@ cards_container.style.display="flex";
     const anchor = document.createElement('a');
     const image = document.createElement('img');
     card.classList.add('card');
-    anchor.href = `/detail.html?${single_item.id}`;
+    anchor.href = `assets/detail.html?${single_item.id}`;
     image.src = single_item.urls.thumb;
     card.style.backgroundColor = single_item.color;
     image.classList.add('card-img');
